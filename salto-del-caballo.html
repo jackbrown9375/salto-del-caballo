@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salto del caballo</title>
+    <style>
+        .parent-container {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 600px;
+        }
+
+        .container {
+            background-color: gray;
+            width: 100%;
+            aspect-ratio: 8/3;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            border: 2px solid;
+            box-sizing: border-box;
+        }
+
+        .test-container {
+            display: grid;
+            grid-template-columns: 8fr 2fr;
+            margin-top: 5px;
+        }
+
+        #probar {
+            height: 40px;
+        }
+
+        .item {
+            background-color: #fff;
+            aspect-ratio: 1/1;
+            border: 3px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .visitable {
+            background-color: greenyellow;
+            cursor: pointer;
+        }
+
+        .visitado {
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent-container">
+        <div class="container" id="container">
+
+        </div>
+
+        <div class="test-container">
+            <textarea id="respuesta"></textarea>
+            <input id="probar" type="button" value="Probar">
+        </div>
+    </div>
+
+    <script src="salto.js"></script>
+
+</body>
+
+</html>
